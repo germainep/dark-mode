@@ -13,9 +13,9 @@ const useLocalStorage = (key, initialValue) => {
     setStoredValue(value)
     window.localStorage.setItem(key, JSON.stringify(value))
   } 
-
+  return [storedValue, setValue]
 };
 
 
 //make this component available to the app
-export default [storedValue, setValue];
+export default useLocalStorage;
