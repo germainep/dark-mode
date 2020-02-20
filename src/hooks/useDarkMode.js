@@ -8,7 +8,7 @@ const useDarkMode = () => {
   const [enableDarkMode, setEnableDarkMode] = useLocalStorage('dark', false);
   useEffect(() => {
     //get body element from DOM
-    const body = document.getElementsByTagName("body");
+    const body = document.getElementsByTagName("body")[0];
 
     // change class on body 
     enableDarkMode ? body.classList.add("dark-mode") : body.classList.remove('dark-mode');
