@@ -18,4 +18,4 @@ const useLocalStorage = (key, initialValue) => {
 
 
 //make this component available to the app
-export default [storedValue];
+export default [storedValue, setValue];
